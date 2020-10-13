@@ -9,9 +9,7 @@ import Skills from "./services/Skills"
 
 const Header = (props) => (
     <header>
-        <a href="./">
-            <h1 id="head"><span id="job">UNG</span>Maxime</h1>
-        </a>
+        <h1 id="head"><span id="job">UNG</span>Maxime</h1>
         <NavBar />
     </header>
 );

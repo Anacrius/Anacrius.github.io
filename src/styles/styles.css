@@ -53,11 +53,13 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
+    margin-right: 5px;
     color: var(--lmain-color);
 }
 
 ul {
     display: flex;
+    list-style-type: none;
     justify-content: center;
     align-items: center;
 }
