@@ -42,7 +42,7 @@ class Themer extends Component {
 
     default() {
         this.change(
-            "#22577a",      // --main-color
+            "#6699cc",      // --main-color
             "#a2d2ff",      // --lmain-color
             "#457b9d",      // --inner-main-color
             "#ffe5d9"       // --main-background
@@ -82,16 +82,6 @@ class Themer extends Component {
         );
     }
 
-    /*
-        fall() {
-            this.change(
-                "#0080ff",      // --main-color
-                "lightblue",    // --lmain-color
-                "#885053",      // --inner-main-color
-                "bisque"        // --main-background
-            );
-        }*/
-
     alternative() {
         this.change(
             "#7d4f50",      // --main-color
@@ -110,7 +100,7 @@ class Themer extends Component {
     render() {
         return (
             <select className="themer" onChange={this.handleChange.bind(this)}>
-                <option value="def">Default</option>
+                <option value="def">Default Theme</option>
                 <option value="dark">Dark</option>
                 <option value="alt">Alternative</option>
                 <option value="alt2">Wisteria</option>

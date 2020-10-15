@@ -4,11 +4,12 @@ import { BrowserRouter as Router,
          Switch, } from 'react-router-dom';
 
 import NavBar from "./jsx/Navbar";
+import Resume from "./jsx/Resume";
 import Gallery from "./services/Gallery";
 import Skills from "./services/Skills"
 
 const Header = (props) => (
-    <header>
+    <header id="top-header">
         <h1 id="head"><span id="job">UNG</span>Maxime</h1>
         <NavBar />
     </header>
@@ -17,14 +18,9 @@ const Header = (props) => (
 const Footer = (props) => (
     <footer>
         <div className="efooter info">
-            <a className="link" href="./">About</a>
-            <a className="link" href="./">Contact</a>
+            <h4>React page made by Anacrius (Maxime Ung)</h4>
         </div>
     </footer>
-);
-
-const Home = (props) => (
-    <div>Home</div>
 );
 
 export default function App() {
@@ -32,9 +28,9 @@ export default function App() {
     <Router>
         <div id="app">
             <Header />
-            <main>
+            <main id="main">
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={Resume} />
                     <Route path="/gallery" component={Gallery} />
                     <Route path="/skills" component={Skills} />
                 </Switch>

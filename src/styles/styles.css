@@ -5,8 +5,8 @@
 */
 
 :root {
-    --main-background: #8AA1B1;
-    --main-color:  #22577a;
+    --main-background: #ffe5d9;
+    --main-color:  #6699cc;
     --lmain-color: #a2d2ff;
     --inner-main-color: #457b9d;
     --text-color: black;
@@ -28,13 +28,14 @@ body,html {
 #app { /* contains the 3 parts */
     min-height:100vh; /* i.e min height = 100% viewport height */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: var(--main-background);
 }
 
 /** header **/
 
-header {
+#top-header {
     height: 10%;
     min-height: 100px;
     background-color: var(--lmain-color);
@@ -42,9 +43,6 @@ header {
 
 #head {
     background-color: var(--lmain-color);
-}
-
-h1 {
     text-align: center;
     color: white;
 }
@@ -89,28 +87,176 @@ ul {
 
 /** main **/
 
-main {
-    flex-grow: 1;
-    margin-left: 2.5%;
-    width: 95%;
-}
-
-.ads { /* all job ads */
+#main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.card { /* one card = one job ad */
-    flex: 1 0 90%;
-    max-width: 90%;
+/** **/
+
+.container {
+    margin: 20px 0;
+    width: 65%;
 }
 
-.card-action {
+.resume {
+    max-width: 65%;
+    max-width: 100vw;
+    background-color: var(--main-color);
     display: flex;
-    flex-direction: row;
+}
+
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-content: space-around;
+    justify-items: center;
+}
+
+.resume-body > * {
+    font-size: 17px;
+}
+
+/* leftbar */
+.leftBar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 2%;
+    background-color: var(--lmain-color);
+}
+
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-top: 20px;
+    border-radius: 45px; /* circle picture */
+    overflow: hidden;
+}
+
+#fullname {
+    font-size: 20px;
+}
+
+.label.info {
+    font-weight: bold;
+}
+
+.info {
+    padding: 0 15px 0 0;
+    margin: 0;
+}
+
+.labelicon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 4px;
+}
+
+#about {
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    border-top: 1px solid var(--main-color);
+}
+
+.bibox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+/*right content*/
+
+.r-header {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#r-title {
+    color: var(--lmain-color);
+}
+
+.left-side {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    padding-left: 2.5%;
+}
+
+.r-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+h3.article-label {
+    border-bottom: 1px solid var(--lmain-color);
+    padding-right: 5px;
+    margin: 0;
+    color: var(--lmain-color);
+}
+
+.paragraphs {
+    padding-top: 10px;
+    padding-left: 20%;
+    width: 78%;
+}
+
+@media screen and (max-width: 600px) {
+    .paragraphs {
+      padding-left: 2px;
+    }
+    .maincontent {
+        padding-left: 2px;
+    }
+  }
+
+.s-title {
+    margin: 5px 0;
+}
+
+.e-title {
+    margin: 0;
+    padding-top: 15px;
+}
+
+.education {
+    padding: 0 auto;
+}
+
+.line {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.label.line {
+    font-weight: bold;
+}
+
+.logos > img {
+    margin-left: 2vh;
+    margin: 5px 2vh;
 }
 
 .pagination {
