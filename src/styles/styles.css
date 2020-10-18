@@ -85,6 +85,10 @@ ul {
     height: 2em;
 }
 
+.gallery {
+    width: 70%;
+}
+
 /** main **/
 
 #main {

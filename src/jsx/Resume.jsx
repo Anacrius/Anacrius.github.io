@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { PLanguages, PSofts, Interests } from "../jsx/Logos";
+import { PLanguages, PSofts, Interests, Flags } from "../jsx/Logos";
 import { Article, BiBox, Logo, Interestpoint, Keyid } from "../jsx/Format";
 
 import { GeneralInfo, Education, Description, Documentation } from "../jsx/Aboutme"
@@ -29,6 +29,24 @@ class Resume extends Component {
         }
         this.setState({education});
     }
+
+    languages = (
+        <div>
+            <h4>Languages</h4>
+            <Interestpoint
+                label="French"
+                src={Flags.french}
+                alt="french flag logo"
+                desc="Native"
+            />
+            <Interestpoint
+                label="English (UK/US)"
+                src={Flags.english}
+                alt="english flag logo"
+                desc="B2-C1"
+            />
+        </div>
+    );
 
     interests = (
         <div>
@@ -85,6 +103,7 @@ class Resume extends Component {
             <BiBox left="Location: " right="France" />
             <BiBox left="Mail: " right={<a href={"mailto:" + GeneralInfo.email}>{GeneralInfo.email}</a>} />
             <BiBox left="GitHub:" right={<a href={GeneralInfo.github}>www.github.com/Anacrius</a>} />
+            {this.languages}
             {this.interests}
         </div>
     );
