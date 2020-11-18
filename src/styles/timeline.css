@@ -1,0 +1,98 @@
+/* t-year, t-line, t-desc */
+
+:root {
+    --main-background: #ffe5d9;
+    --main-color:  #6699cc;
+    --lmain-color: #a2d2ff;
+    --inner-main-color: #457b9d;
+    --text-color: black;
+    --ltext-color: black;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+/*
+@media screen and (max-width: 1000px) {
+    .paragraphs {
+      padding-left: 2px;
+    }
+}*/
+
+.timepoint {
+    flex: 1 0 19%;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+
+.t-year {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--ltext-color);
+}
+
+.t-line {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    color: var(--ltext-color);
+}
+
+.t-line:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 48%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--ltext-color);
+    height: 2px;
+}
+
+.t-desc {
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--ltext-color);
+    color: var(--text-color);
+    margin: 2px 15px;
+    padding: 10px 3px 3px 12px;
+    border-radius: 12px;
+    min-height: 150px;
+}
+
+.t-desc:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    margin: -2px 0;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tdesc-title {
+    color: var(--text-color);
+    margin: 6px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tdesc-desc {
+    font-size: 14px;
+}

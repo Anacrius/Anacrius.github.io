@@ -8,7 +8,8 @@ const PLanguages = {
     html: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/html.png",
     css: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/css.png",
     js: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/javascript-programming-language.png",
-    react: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/react-js.png"
+    react: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/react-js.png",
+    jquery: "https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/jquery.png"
 }
 
 const PSofts = {

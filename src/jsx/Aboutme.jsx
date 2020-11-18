@@ -1,5 +1,6 @@
 const GeneralInfo = {
     fullname: "Maxime Ung",
+    pseudo: "Anacrius",
     avatar: "https://avatars1.githubusercontent.com/u/71248735?s=460&u=4df514b7a3d470625b87d0382d81938dc2587a53&v=4",
     job: "Developper / Programmer",
     email: "maxime.ung@epitech.eu",
@@ -13,8 +14,7 @@ const Documentation = (
 );
 
 const Description = [
-    "Hello, I am actually looking for a work-study contract in January 2021 in the field of IA, Big Data or Web Development. I want to learn new things and explore new horizons.",
-     "My strongest weakness is my lack of experience but my willingness to achieve my goals will end up to overcome it.",
+    "Hello, I am actually looking for a work-study contract in January 2021 in the field of AI, Big Data or Web Development. I want to learn new things and explore new horizons.",
      "I have a strong interest into artificial consciousness, datas and information gestion because I believe that the handling and the correct exploitation of datas lead to progress."
 ];
 

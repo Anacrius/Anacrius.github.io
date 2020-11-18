@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-import { PLanguages, PSofts, Interests, Flags } from "../jsx/Logos";
-import { Article, BiBox, Logo, Interestpoint, Keyid } from "../jsx/Format";
+import InterestsLists from "./InterestLists";
+import Timeline from "./Timeline"
 
-import { GeneralInfo, Education, Description, Documentation } from "../jsx/Aboutme"
+import { PLanguages, PSofts, Flags } from "./Logos";
+import { Article, BiBox, Logo, Interestpoint, Keyid } from "./Format";
+import { GeneralInfo, Education, Description, Documentation } from "./Aboutme";
 
 class Resume extends Component {
     state = {
@@ -48,61 +50,14 @@ class Resume extends Component {
         </div>
     );
 
-    interests = (
-        <div>
-            <h4 id="interests">Interests / Activities:</h4>
-            <Interestpoint
-                label="Kendo"
-                src={Interests.katana}
-                alt="katana logo"
-                desc="Suburi"
-            />
-            <Interestpoint
-                label="Video games"
-                src={Interests.controller}
-                alt="controller logo"
-                desc="Cooperation, Competition"
-            />
-            <Interestpoint
-                label="Programming"
-                src={Interests.laptop}
-                alt="laptop logo"
-                desc="Learning concepts"
-            />
-            <Interestpoint
-                label="Problem Solving"
-                src={Interests.hackerRank}
-                alt="hackerrank logo"
-                desc="Program to solve problems"
-            />
-            <Interestpoint
-                label="Artificial consciousness"
-                src={Interests.ml}
-                alt="machine learning logo"
-                desc=""
-            />
-            <Interestpoint
-                label="Music"
-                src={Interests.music}
-                alt="music logo"
-                desc="OST, post-rock, rock"
-            />
-            <Interestpoint
-                label="Manga / Anime"
-                src={Interests.book}
-                alt="book logo"
-                desc=""
-            />
-            
-        </div>
-    );
+    interests = <InterestsLists divname="interestlists"/>;
 
     about = (
         <div id="about">
-            <BiBox left="Birth date: " right="31/10/1997"/>
-            <BiBox left="Location: " right="France" />
+            <BiBox left="Birth date: " right={GeneralInfo.birthdate}/>
+            <BiBox left="Location: " right={GeneralInfo.location} />
             <BiBox left="Mail: " right={<a href={"mailto:" + GeneralInfo.email}>{GeneralInfo.email}</a>} />
-            <BiBox left="GitHub:" right={<a href={GeneralInfo.github}>www.github.com/Anacrius</a>} />
+            <BiBox left="GitHub:" right={<a href={GeneralInfo.github}>{"www.github.com/" + GeneralInfo.pseudo}</a>} />
             {this.languages}
             {this.interests}
         </div>
@@ -113,6 +68,7 @@ class Resume extends Component {
             <Logo src={PLanguages.haskell} alt="haskell logo" />
             <Logo src={PLanguages.cpp} alt="cpp logo"/>
             <Logo src={PLanguages.c} alt="c logo"/>
+            <Logo src={PLanguages.js} alt="js logo"/>
             <Logo src={PLanguages.python} alt="python logo"/>
         </p>
     );
@@ -122,7 +78,7 @@ class Resume extends Component {
             <Logo src={PLanguages.html} alt="html logo"/>
             <Logo src={PLanguages.css} alt="css logo"/>
             <Logo src={PLanguages.materialize} alt="materialize logo" />
-            <Logo src={PLanguages.js} alt="js logo"/>
+            <Logo src={PLanguages.jquery} alt="jquery logo"/>
             <Logo src={PLanguages.react} alt="react logo"/>
         </p>
     );
@@ -181,11 +137,6 @@ class Resume extends Component {
                     </div>
 
                     <div className="resume-body">
-                        <header className="r-header">
-                            <article className="left-side">
-                                <h1 id="r-title">My React CV</h1>
-                            </article>
-                        </header>
                         <main className="maincontent">
                             <Article
                                 type="Description"
@@ -193,15 +144,14 @@ class Resume extends Component {
                                 content={this.state.description}
                             />
                             <Article
+                                type="Education"
+                                label="Education"
+                                content={<Timeline />}
+                            />
+                            <Article
                                 type="Skills"
                                 label="Skills"
                                 content={this.skills}
-                            />
-                            <Article
-                                type="Education"
-                                label="Education"
-                                content={this.state.education.map((elem) => (elem)
-                                )}
                             />
                             <Article
                                 type="Documentation"
