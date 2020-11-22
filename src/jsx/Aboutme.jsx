@@ -24,7 +24,7 @@ const Education = {
     "Epitech Paris":  ["(sept 2020 - now) Pre-Msc pro",
                       "(2019 - 2010) PGE 2nd year"],
     "Paris-V Descartes (University)": ["(2015-2018) Economic bachelor's degree"],
-    "Lycée Montesquieu (High school)": ["Highschool degree ES (economic and social)"]
+    "Lycée Montesquieu": ["Highschool degree ES (economic and social)"]
 };
 
 export { GeneralInfo, Education, Description, Documentation };

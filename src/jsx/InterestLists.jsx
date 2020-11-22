@@ -1,51 +1,50 @@
 import React from 'react';
 
-import { Interests } from "./Logos";
-import { Interestpoint } from "./Format";
+import { Svg } from "./Logos";
+import { BiBox, Icontxt } from "./Format";
 
-const InterestLists = (divname) => (
+const SingleInterest = ({ svgicon, svgtxt, desc}) => (
+    <BiBox
+        left={
+            <Icontxt
+                icon={ svgicon }
+                txt={ svgtxt }
+            />
+        }
+        right={ desc }
+    />
+);
+
+const InterestLists = ({divname}) => (
     <div className={divname}>
-        <h4 id="interests">Interests / Activities:</h4>
-        <Interestpoint
-            label="Kendo"
-            src={Interests.katana}
-            alt="katana logo"
+        <SingleInterest
+            svgicon={Svg.sword}
+            svgtxt="Kendo"
             desc="Suburi"
         />
-        <Interestpoint
-            label="Video games"
-            src={Interests.controller}
-            alt="controller logo"
+        <SingleInterest
+            svgicon={Svg.controller}
+            svgtxt="Video games"
             desc="Cooperation, Competition"
         />
-        <Interestpoint
-            label="Programming"
-            src={Interests.laptop}
-            alt="laptop logo"
-            desc="Learning concepts"
+        <SingleInterest
+            svgicon={Svg.puzzle}
+            svgtxt="Problem Solving"
+            desc="Hackerrank"
         />
-        <Interestpoint
-            label="Problem Solving"
-            src={Interests.hackerRank}
-            alt="hackerrank logo"
-            desc="Program to solve problems"
+        <SingleInterest
+            svgicon={Svg.ai}
+            svgtxt="Scientific culture"
+            desc="Artificial consciousness, thermodynamic"
         />
-        <Interestpoint
-            label="Artificial consciousness"
-            src={Interests.ml}
-            alt="machine learning logo"
-            desc=""
-        />
-        <Interestpoint
-            label="Music"
-            src={Interests.music}
-            alt="music logo"
+        <SingleInterest
+            svgicon={Svg.music}
+            svgtxt="Music"
             desc="OST, post-rock, rock"
         />
-        <Interestpoint
-            label="Manga / Anime"
-            src={Interests.book}
-            alt="book logo"
+        <SingleInterest
+            svgicon={Svg.book}
+            svgtxt="Manga / Anime"
             desc=""
         />
     </div>

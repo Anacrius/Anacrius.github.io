@@ -30,9 +30,9 @@ export default function App() {
             <Header />
             <main id="main">
                 <Switch>
-                    <Route exact path="/" component={Resume} />
+                    <Route exact path="/" component={Skills} />
+                    <Route path="/resume" component={Resume} />
                     <Route path="/gallery" component={Gallery} />
-                    <Route path="/skills" component={Skills} />
                 </Switch>
             </main>
             <Footer />
