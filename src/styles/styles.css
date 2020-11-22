@@ -136,70 +136,6 @@ ul {
     font-size: 17px;
 }
 
-/* leftbar */
-.leftBar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /*padding-left: 3%;
-    padding-right: 2%;*/
-    background-color: var(--lmain-color);
-}
-
-.aboutme {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-pic {
-    margin-top: 20px;
-    border-radius: 45px; /* circle picture */
-    overflow: hidden;
-}
-
-.textcontent {
-    border-bottom: 1px solid var(--main-color);
-}
-
-#fullname {
-    color: var(--ltext-color);
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#jobtitle {
-    color: var(--text-color);
-}
-
-.label.info {
-    font-weight: bold;
-}
-
-.info {
-    padding: 0 15px 0 0;
-    margin: 0;
-}
-
-.labelicon {
-    display: flex;
-    align-items: center;
-}
-
-.icon {
-    margin-right: 4px;
-}
-
-#about {
-    margin-top: 20px;
-    padding-top: 10px;
-    width: 90%;
-    margin-left: 5%;
-    /*border-top: 1px solid var(--main-color);*/
-}
-
 .bibox {
     display: flex;
     flex-wrap: wrap;
@@ -208,29 +144,72 @@ ul {
     padding-bottom: 15px;
 }
 
-/*right content*/
+/** resume content **/
 
-.r-header {
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-#r-title {
-    color: var(--lmain-color);
-}
-
-.left-side {
+/* resume header */
+.resume-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--lmain-color);
     color: var(--text-color);
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
+
+.left-rheader, .right-rheader {
+    padding: 10px;
+}
+
+.left-rheader {
+    width: 50%;
+}
+
+.fullname {
+    display: flex;
+    align-items: center;
+    font-size: 39px;
+    margin: 10px 0px 0px 0px;
+}
+
+.profile-pic {
+    vertical-align: middle;
+    margin-right: 15px;
+    border-radius: 45px;
+    min-width: 70px;
+    overflow: hidden;
+}
+
+.svg_txt {
+    display: flex;
+    margin: 8px;
+    height: 25px;
+}
+
+.svg-icon {
+    height: 100%;
+    fill: var(--ltext-color);
+}
+
+.svg-txt {
+    margin-left: 10px;
+}
+
+.right-rheader > .bibox > .label > .labelicon {
+    display: flex;
+}
+
+.right-rheader > .bibox > .label > .labelicon > .icondesc {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
 
 .maincontent {
     display: flex;
     flex-direction: column;
-    max-width: 95%;
     /*padding-left: 2.5%;*/
 }
-
 
 .r-article {
     margin-bottom: 15px;
@@ -261,16 +240,6 @@ h3.article-label {
     padding-left: 10%;
     width: 78%;
 }
-
-/*
-@media screen and (max-width: 600px) {
-    .paragraphs {
-      padding-left: 2px;
-    }
-    .maincontent {
-        padding-left: 2px;
-    }
-  }*/
 
 .s-title {
     margin: 5px 0;

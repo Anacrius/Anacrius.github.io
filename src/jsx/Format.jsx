@@ -27,7 +27,7 @@ const Logo = ({ src, alt, w="40", h="40" }) => (
 );
 
 const Labelicon = ({ label, icon }) => (
-    <div className="labelicon"><span className="icon">{icon}</span> {label}</div>
+    <div className="labelicon"><span className="icon">{icon}</span> <span className="icondesc">{label}</span></div>
 );
 
 const Interestpoint = ({ label, src, alt, desc }) => (
@@ -41,4 +41,11 @@ const Interestpoint = ({ label, src, alt, desc }) => (
     />
 );
 
-export {Article, BiBox, Logo, Labelicon, Interestpoint, Keyid};
+const Icontxt = ({ icon, txt }) => (
+    <div className="svg_txt">
+        {icon}
+        <span className="svg-txt">{txt}</span>
+    </div>
+);
+
+export {Article, BiBox, Logo, Labelicon, Interestpoint, Keyid, Icontxt};

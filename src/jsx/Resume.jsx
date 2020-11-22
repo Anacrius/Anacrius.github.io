@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import InterestsLists from "./InterestLists";
 import Timeline from "./Timeline"
 
-import { PLanguages, PSofts, Flags } from "./Logos";
-import { Article, BiBox, Logo, Interestpoint, Keyid } from "./Format";
+import { PLanguages, PSofts, Flags, Svg } from "./Logos";
+import { Article, BiBox, Logo, Interestpoint, Keyid, Icontxt } from "./Format";
 import { GeneralInfo, Education, Description, Documentation } from "./Aboutme";
 
 class Resume extends Component {
@@ -119,6 +119,83 @@ class Resume extends Component {
         return (
             <div className="container">
                 <div className="resume">
+                    <main className="resume-body">
+                        <header className="resume-header">
+                            <article className="left-rheader">
+                                <h1 className="fullname">
+                                    <img className="profile-pic"
+                                        src={state.avatar}
+                                        alt="github profilepic"
+                                        width="70"
+                                        height="70"
+                                    />
+                                    <span>
+                                        { GeneralInfo.fullname }
+                                    </span>
+                                </h1>
+                                <h4 className="occupation">{ GeneralInfo.occupation }</h4>
+                                <h4>Developper actually looking for a work-study contract for January 2021</h4>
+                            </article>
+                            <article className="right-rheader">
+                                <Icontxt
+                                    icon={ Svg.mail }
+                                    txt={ <a href={"mailto:" + GeneralInfo.email}>{GeneralInfo.email}</a> }
+                                />
+                                <Icontxt
+                                    icon={ Svg.place }
+                                    txt={ GeneralInfo.location }
+                                />
+                                <Icontxt
+                                    icon={ Svg.cake }
+                                    txt={ GeneralInfo.birthdate }
+                                />
+                                <Icontxt
+                                    icon={Svg.website}
+                                    txt={<a href={GeneralInfo.website}>{GeneralInfo.website}</a>}
+                                />
+                                <Icontxt
+                                    icon={Svg.github}
+                                    txt={<a href={GeneralInfo.github}>{"www.github.com/" + GeneralInfo.pseudo}</a>}
+                                />
+                            </article>
+                        </header>
+                        <Article
+                            type="Description"
+                            label="Personal Profile"
+                            content={this.state.description}
+                        />
+                        <Article
+                            type="Education"
+                            label="Education"
+                            content={<Timeline />}
+                        />
+                        <Article
+                            type="Skills"
+                            label="Skills"
+                            content={this.skills}
+                        />
+                        <Article
+                            type="Documentation"
+                            label="Documentation"
+                            content={
+                                <p>
+                                <a href={Documentation}> More details about the work-study contract (french) </a>
+                                </p>
+                            }
+                        />
+                    </main>
+
+                </div>
+            </div>
+        );
+    }
+
+    /*
+    render() {
+        const state = GeneralInfo;
+        return (
+            <div className="container">
+                <div className="resume">
 
                     <div className="leftBar">
                         <div className="aboutme">
@@ -169,6 +246,7 @@ class Resume extends Component {
             </div>
         );
     }
+    */
 }
 
 export default Resume;

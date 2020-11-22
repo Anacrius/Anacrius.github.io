@@ -63,7 +63,7 @@
     z-index: 1;
     border: 2px solid var(--ltext-color);
     color: var(--text-color);
-    margin: 2px 15px;
+    margin: 10px 15px 2px 15px;
     padding: 10px 3px 3px 12px;
     border-radius: 12px;
     min-height: 150px;
@@ -87,9 +87,11 @@
 }
 
 .tdesc-title {
+    text-align: center;
     color: var(--text-color);
     margin: 6px 0;
     font-weight: bold;
+    padding-bottom: 5px;
     font-size: 16px;
 }
 

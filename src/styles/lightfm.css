@@ -4,10 +4,12 @@
     --lmain-color: #a2d2ff;
     --inner-main-color: #457b9d;
     --text-color: black;
+    --ltext-color: #000066;
 }
 
 .card {
     background-color: var(--main-color);
+    color: var(--text-color);
     border-radius: 8px;
     margin: 10px 0;
     padding: 5px 15px;
@@ -21,8 +23,9 @@
 .btn {
     border: 1px solid var(--text-color);
     background-color: var(--inner-main-color);
-    padding: 5px;
-    border-radius: 15px;
+    color: var(--ltext-color);
+    padding: 6px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -33,5 +36,5 @@
 #cardfooter {
     margin: 10px 0;
     padding-top: 15px;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--ltext-color);
 }

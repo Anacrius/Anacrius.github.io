@@ -2,10 +2,12 @@ const GeneralInfo = {
     fullname: "Maxime Ung",
     pseudo: "Anacrius",
     avatar: "https://avatars1.githubusercontent.com/u/71248735?s=460&u=4df514b7a3d470625b87d0382d81938dc2587a53&v=4",
-    job: "Developper / Programmer",
+    occupation: "Student at Epitech Paris",
+    shortdesc: "Developper actually looking for a work-study contract for January 2021",
     email: "maxime.ung@epitech.eu",
     github: "https://www.github.com/Anacrius/",
-    birthdate: "31/10/1997",
+    website: "anacrius.github.io",
+    birthdate: "31 / 10 / 1997",
     location: "France",
 };
 

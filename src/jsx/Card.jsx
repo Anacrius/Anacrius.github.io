@@ -6,7 +6,6 @@ class Card extends Component {
         super(props);
         this.state = {
           full: false,
-          logo: this.props.logo,
           title: this.props.title,
           shortDesc: this.props.shortDesc,
           longDesc: this.props.longDesc
@@ -15,8 +14,8 @@ class Card extends Component {
     }
 
     handleClick() {
-        /*const extend = !(this.state.full);
-        this.setState({full: extend});*/
+        const extend = !(this.state.full);
+        this.setState({full: extend});
     }
 
     render() {
@@ -26,7 +25,9 @@ class Card extends Component {
                 <p>{ this.state.shortDesc }</p>
                 <p>{ this.state.full === true ? this.state.longDesc : "" }</p>
                 <div id="cardfooter">
-                    <button onClick={() => this.handleClick()} className="btn">Learn more</button>
+                    <button onClick={() => this.handleClick()} className="btn">
+                        {this.state.full === false ? "Learn more" : "Close desc"}
+                    </button>
                 </div>
             </div>
         );
