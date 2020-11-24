@@ -20,7 +20,7 @@ class Home extends Component {
                     title="My First Article - 24 / 11 / 2020"
                     content= {
                     <p>
-                    Hello to everyone, you will find on this website a collection of features based on the knowloedges I'm making during my journey. Want you can actually find here for now:
+                    Hello to everyone, you will find on this website a collection of features based on the knowloedges I'm making during my journey. What you can actually find in here for now:
                     <br/>
                         <ul className="article-list">
                             <li> - Home (you are here) </li>
