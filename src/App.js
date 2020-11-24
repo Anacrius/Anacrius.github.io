@@ -6,7 +6,8 @@ import { BrowserRouter as Router,
 import NavBar from "./jsx/Navbar";
 import Resume from "./jsx/Resume";
 import Gallery from "./services/Gallery";
-import Skills from "./services/Skills"
+import Home from "./services/Home"
+import Tweaks from "./services/Tweaks"
 
 const Header = (props) => (
     <header id="top-header">
@@ -30,9 +31,10 @@ export default function App() {
             <Header />
             <main id="main">
                 <Switch>
-                    <Route exact path="/" component={Skills} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/resume" component={Resume} />
                     <Route path="/gallery" component={Gallery} />
+                    <Route path="/tweaks" component={Tweaks} />
                 </Switch>
             </main>
             <Footer />

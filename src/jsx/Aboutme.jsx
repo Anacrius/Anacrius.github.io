@@ -5,8 +5,8 @@ const GeneralInfo = {
     occupation: "Student at Epitech Paris",
     shortdesc: "Developper actually looking for a work-study contract for January 2021",
     email: "maxime.ung@epitech.eu",
-    github: "https://www.github.com/Anacrius/",
-    website: "anacrius.github.io",
+    github: "https://github.com/Anacrius/",
+    website: "https://anacrius.github.io",
     birthdate: "31 / 10 / 1997",
     location: "France",
 };

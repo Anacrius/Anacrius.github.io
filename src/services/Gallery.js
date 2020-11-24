@@ -6,6 +6,7 @@ class Gallery extends Component {
     render() {
         return (
             <div className="gallery">
+                <h1> My Projects gallery (building in progress) </h1>
                 <Card
                     title="Zsh shell implementation"
                     shortDesc="A program in C to reproduce a Unix shell "
@@ -15,19 +16,19 @@ class Gallery extends Component {
                 <Card
                     title="** Title **"
                     shortDesc="short description"
-                    longDesc=""
+                    longDesc="Long description"
                     pictures=""
                 />
                 <Card
                     title="** Title **"
                     shortDesc="short description"
-                    longDesc=""
+                    longDesc="Long description"
                     pictures=""
                 />
                 <Card
                     title="** Title **"
                     shortDesc="short description"
-                    longDesc=""
+                    longDesc="Long description"
                     pictures=""
                 />
             </div>

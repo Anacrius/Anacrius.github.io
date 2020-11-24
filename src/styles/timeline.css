@@ -72,7 +72,7 @@
     border: 2px solid var(--ltext-color);
     color: var(--text-color);
     margin: 10px 15px 2px 15px;
-    padding: 10px 3px 3px 12px;
+    padding: 10px 5px 3px 8px;
     border-radius: 12px;
     min-height: 150px;
 }

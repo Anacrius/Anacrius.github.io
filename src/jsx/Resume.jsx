@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import InterestsLists from "./InterestLists";
 import Timeline from "./Timeline"
 
-import { PLanguages, PSofts, Flags, Svg } from "./Logos";
-import { Article, BiBox, Logo, Interestpoint, Keyid, Icontxt } from "./Format";
-import { GeneralInfo, Education, Description, Documentation } from "./Aboutme";
+import { PLanguages, PSofts, Svg } from "./Logos";
+import { Article, Logo, Keyid, Icontxt } from "./Format";
+import { GeneralInfo, Description, Documentation } from "./Aboutme";
 
 class Resume extends Component {
     state = {
@@ -14,54 +14,7 @@ class Resume extends Component {
         <p key={Keyid.id++}>{ elem }</p> )
     }
 
-    componentDidMount() {
-        let education = [];
-        let content = [];
-        for (const property in Education) {
-            content = Education[property].map((elem) =>
-                (<p key={Keyid.id++} className="line">{elem}</p>)
-            );
-            education.push(
-                <article key={Keyid.id++}>
-                    <h4 className="e-title">{property}</h4>
-                    {content}
-                </article>
-            )
-            content = [];
-        }
-        this.setState({education});
-    }
-
-    languages = (
-        <div>
-            <h4>Languages</h4>
-            <Interestpoint
-                label="French"
-                src={Flags.french}
-                alt="french flag logo"
-                desc="Native"
-            />
-            <Interestpoint
-                label="English (UK/US)"
-                src={Flags.english}
-                alt="english flag logo"
-                desc="B2-C1"
-            />
-        </div>
-    );
-
     interests = <InterestsLists divname="interestlists"/>;
-
-    about = (
-        <div id="about">
-            <BiBox left="Birth date: " right={GeneralInfo.birthdate}/>
-            <BiBox left="Location: " right={GeneralInfo.location} />
-            <BiBox left="Mail: " right={<a href={"mailto:" + GeneralInfo.email}>{GeneralInfo.email}</a>} />
-            <BiBox left="GitHub:" right={<a href={GeneralInfo.github}>{"www.github.com/" + GeneralInfo.pseudo}</a>} />
-            {this.languages}
-            {this.interests}
-        </div>
-    );
 
     plogos = (
         <p className="logos">
@@ -149,14 +102,6 @@ class Resume extends Component {
         </p>
     );
 
-    contact = (
-        <article className="right-side">
-            <span id="contact">Contact:</span>
-            <a href={"mailto:" + GeneralInfo.email}><p id="email">{GeneralInfo.email}</p></a>
-            <a href={GeneralInfo.github}><p id="website">My public projects</p></a>
-        </article>
-    );
-
     render() {
         const state = GeneralInfo;
         return (
@@ -198,7 +143,7 @@ class Resume extends Component {
                                 />
                                 <Icontxt
                                     icon={ Svg.github }
-                                    txt={<a href={GeneralInfo.github}>{"www.github.com/" + GeneralInfo.pseudo}</a>}
+                                    txt={<a href={GeneralInfo.github}>{GeneralInfo.github}</a>}
                                 />
                             </article>
                         </header>
@@ -244,64 +189,6 @@ class Resume extends Component {
             </div>
         );
     }
-
-    /*
-    render() {
-        const state = GeneralInfo;
-        return (
-            <div className="container">
-                <div className="resume">
-
-                    <div className="leftBar">
-                        <div className="aboutme">
-                            <img className="profile-pic"
-                                src={state.avatar}
-                                alt="github profilepic"
-                                width="70"
-                                height="70"
-                            />
-                            <div className="textcontent">
-                                <p id="fullname">{state.fullname}</p>
-                                <p id="jobtitle">{state.job}</p>
-                            </div>
-                        </div>
-                        {this.about}
-                    </div>
-
-                    <div className="resume-body">
-                        <main className="maincontent">
-                            <Article
-                                type="Description"
-                                label="Personal Profile"
-                                content={this.state.description}
-                            />
-                            <Article
-                                type="Education"
-                                label="Education"
-                                content={<Timeline />}
-                            />
-                            <Article
-                                type="Skills"
-                                label="Skills"
-                                content={this.skills}
-                            />
-                            <Article
-                                type="Documentation"
-                                label="Documentation"
-                                content={
-                                    <p>
-                                    <a href={Documentation}> More details about the work-study contract (french) </a>
-                                    </p>
-                                }
-                            />
-                        </main>
-                    </div>
-
-                </div>
-            </div>
-        );
-    }
-    */
 }
 
 export default Resume;
