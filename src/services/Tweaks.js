@@ -1,28 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Tweaks extends Component {
-    state = {
-        width: "80%",
-    }
+import Hidtext from "../jsx/tweaks/Hidtext";
+import ChangeTitle from "../jsx/tweaks/ChangeTitle";
+import GetIp from "../jsx/tweaks/GetIp";
 
-    render() {
-        return (
-            <div className="tweaks">
-                <div className="box" style={{width: this.state.width}}>
-                    <header>
-                        Turn off your ad blocker(s) or inspect the box, in order to see the text down below
-                    </header>
-                    <article>
-                        <p className="hidtext">
-                            <span className="adsbygoogle">
-                                This content is hidden if an ad blocker is turned off
-                            </span>
-                        </p>
-                    </article>
-                </div>
-            </div>
-        );
-    }
+import "../styles/tweaks.css";
+
+const Tweaks = () => {
+    return (
+        <div className="tweaks">
+            <Hidtext />
+            <ChangeTitle />
+            <GetIp />
+        </div>
+    );
 }
 
 export default Tweaks;

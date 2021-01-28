@@ -99,7 +99,13 @@ ul {
 }
 
 .gallery {
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 600px;
 }
 
 /** main **/
@@ -190,6 +196,8 @@ ul {
 
 .svg_txt {
     display: flex;
+    align-items: center;
+    padding-bottom: 4px;/**/
     margin: 8px;
     height: 25px;
 }
@@ -258,7 +266,7 @@ ul {
 
 .interestlists > .bibox {
     width: 30%;
-    margin: 10px 15px;
+    margin: 5px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,32 +350,6 @@ footer {
     margin-bottom: 5px;
 }
 
-/** TWEAKS **/
-
-.tweaks {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-}
-
-.box {
-    color: var(--ltext-color);
-    margin: 20px 0;
-    background-color: var(--inner-main-color);
-    border-radius: 10px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
-    padding: 15px 10px;
-}
-
-.hidtext {
-    text-align: center;
-    min-height: 1.5em;
-    padding: 2%;
-    width: 80%;
-    background-color: var(--lmain-color);
-}
-
 /** HOME **/
 
 .home {
@@ -376,6 +358,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
+}
+
+.home > * {
+    margin-bottom: 20px;
 }
 
 .article {

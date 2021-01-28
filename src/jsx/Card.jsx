@@ -8,6 +8,7 @@ class Card extends Component {
           full: false,
           title: this.props.title,
           shortDesc: this.props.shortDesc,
+          image: this.props.image,
           longDesc: this.props.longDesc
         };
         //this.handleClick = this.handleClick.bind(this);
@@ -21,7 +22,8 @@ class Card extends Component {
     render() {
         return (
             <div className="card">
-                <h3>{ this.state.title }</h3>
+                {this.props.image}
+                <h3 className="card-title">{ this.state.title }</h3>
                 <p>{ this.state.shortDesc }</p>
                 <p>{ this.state.full === true ? this.state.longDesc : "" }</p>
                 <div id="cardfooter">
