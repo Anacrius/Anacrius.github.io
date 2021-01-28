@@ -355,7 +355,7 @@ footer {
 .home {
     margin: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     width: 80%;
 }

@@ -11,7 +11,6 @@ const Tweaks = () => {
         <div className="tweaks">
             <Hidtext />
             <ChangeTitle />
-            <GetIp />
         </div>
     );
 }
