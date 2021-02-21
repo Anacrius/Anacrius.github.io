@@ -9,10 +9,15 @@ import Gallery from "./services/Gallery";
 import Home from "./services/Home"
 import Tweaks from "./services/Tweaks"
 
+//import Cloud from "./jsx/animation/Cloud";
+import Clouds from './jsx/animation/Cloud';
+
 const Header = (props) => (
-    <header id="top-header">
-        <h1 id="head"><span id="job">UNG</span>Maxime</h1>
-        <NavBar />
+    <header id="header">
+        <div id="top-header">
+            <h1 id="head"><span id="job">UNG</span>Maxime</h1>
+            <NavBar />
+        </div>
     </header>
 );
 
@@ -30,6 +35,7 @@ export default function App() {
         <div id="app">
             <Header />
             <main id="main">
+            {Clouds()}
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/resume" component={Resume} />

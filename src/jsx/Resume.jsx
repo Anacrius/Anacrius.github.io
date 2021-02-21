@@ -51,8 +51,8 @@ const Resume = () => {
     }
 
     const slogos = () => {
-        const sofwares_tools = ["Teams", "Visual Studio Code", "Excel", "PowerPoint", "Google Sheets"];
-        const logos = [PSofts.teams, PSofts.visual, PSofts.excel, PSofts.ppt, PSofts.gsheets]
+        const sofwares_tools = ["Teams", "Visual Studio Code", "PowerPoint", "Google Sheets / Excel", "Virtualbox"];
+        const logos = [PSofts.teams, PSofts.visual, PSofts.ppt, PSofts.gsheets, PSofts.virtualbox]
 
         return logos_column("Softwares / Tools", sofwares_tools, logos);
     }
@@ -85,7 +85,7 @@ const Resume = () => {
                                 </span>
                             </h1>
                             <h4 className="occupation">{GeneralInfo.occupation}</h4>
-                            <h4>Developper actually looking for a work-study contract for January 2021</h4>
+                            <h4>Developper actually looking for a work-study contract</h4>
                         </article>
                         <article className="right-rheader">
                             <Icontxt

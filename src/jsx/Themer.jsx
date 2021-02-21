@@ -12,12 +12,12 @@ class Theme {
 }
 
 const def = new Theme (
-    "#6699cc",      // --main-color
-    "#a2d2ff",      // --lmain-color
-    "#457b9d",      // --inner-main-color
+    "rgba(98, 182, 203, 0.8)",      // --main-color
+    "rgba(190, 227, 219, 0.8)",      // --lmain-color
+    "#219EBC",      // --inner-main-color
     "#ffe5d9",      // --main-background
-    "black",
-    "#000066"
+    "white",
+    "#05668D"
 );
 
 const alt = new Theme (
@@ -25,12 +25,13 @@ const alt = new Theme (
     "#cc8b86",      // --lmain-color
     "#d5b9b2",      // --inner-main-color
     "#f9eae1",      // --main-background
-    "black"
+    "white",
+    "#472D30",
 );
 
 const dark = new Theme (
-    "#1a1a1a",      // --main-color
-    "#3E474D",      // --lmain-color
+    "rgba(16, 20, 23, 0.95)",      // --main-color
+    "rgba(62, 71, 77, 0.9)",      // --lmain-color
     "#293241",      // --inner-main-color
     "#2B2D2E",      // --main-background
     "#ffe6cc",      // --text-color
@@ -38,8 +39,8 @@ const dark = new Theme (
 );
 
 const dark2 = new Theme (
-    "#1a1a1a",      // --main-color
-    "#3E474D",      // --lmain-color
+    "rgba(16, 20, 23, 0.9)",      // --main-color
+    "rgba(62, 71, 77, 0.9)",      // --lmain-color
     "#293241",      // --inner-main-color
     "#2B2D2E",      // --main-background
     "lightgray",      // --text-color

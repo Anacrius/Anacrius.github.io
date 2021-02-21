@@ -16,6 +16,25 @@ const Home = () => {
     return (
         <div className="home">
             <Article
+                title="Feb update - 21 / 02 / 2021"
+                content={
+                    <p>
+                        New little update with animated props on the background, a small step before a full implementation.
+                    <br />
+                        <ul className="article-list">
+                            <p>Gallery:</p>
+                            <li> - Update Card, 1 per row and btn-link and the bottom right </li>
+                            <li> - Add 3 of my projects with corresponding picture and description</li>
+                        </ul>
+                        <ul className="article-list">
+                            <p>Home:</p>
+                            <li> - Moving clouds in the background </li>
+                        </ul>
+                        Next update: tags on Card for a filter and a Night/Day theme for interractive clouds
+                    </p>
+                }
+            />
+            <Article
                 title="A little update - 28 / 01 / 2021"
                 content={
                     <p>

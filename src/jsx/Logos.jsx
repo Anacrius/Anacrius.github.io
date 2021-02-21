@@ -19,12 +19,14 @@ const PLanguages = {
 
 const PSofts = {
     filezilla: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/FileZilla_logo.svg/200px-FileZilla_logo.svg.png",
+    virtualbox: "https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/VirtualBox.png",
     /* logos free to use from uxwing.com */
     github: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/github.png",
     teams: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/microsoft-teams.png",
     visual: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/visual-studio-code.png",
     excel: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/microsoft-excel.png",
     ppt: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/microsoft-powerpoint.png",
+    yt: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/youtube-round-color.png",
     gsheets: "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/google-sheets.png"
 }
 
