@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.23688553.chunk.css",
-    "main.js": "/static/js/main.fff78c57.chunk.js",
-    "main.js.map": "/static/js/main.fff78c57.chunk.js.map",
+    "main.css": "/static/css/main.9eabec8f.chunk.css",
+    "main.js": "/static/js/main.2f422e25.chunk.js",
+    "main.js.map": "/static/js/main.2f422e25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bbf3189.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bbf3189.js.map",
-    "static/js/2.b40b1236.chunk.js": "/static/js/2.b40b1236.chunk.js",
-    "static/js/2.b40b1236.chunk.js.map": "/static/js/2.b40b1236.chunk.js.map",
+    "static/js/2.4c4d8932.chunk.js": "/static/js/2.4c4d8932.chunk.js",
+    "static/js/2.4c4d8932.chunk.js.map": "/static/js/2.4c4d8932.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7047847c4bbfdc69f7df87595bd40faa.js": "/precache-manifest.7047847c4bbfdc69f7df87595bd40faa.js",
+    "precache-manifest.37c37e649f297c9bc694f7545663a876.js": "/precache-manifest.37c37e649f297c9bc694f7545663a876.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.23688553.chunk.css.map": "/static/css/main.23688553.chunk.css.map",
-    "static/js/2.b40b1236.chunk.js.LICENSE.txt": "/static/js/2.b40b1236.chunk.js.LICENSE.txt",
+    "static/css/main.9eabec8f.chunk.css.map": "/static/css/main.9eabec8f.chunk.css.map",
+    "static/js/2.4c4d8932.chunk.js.LICENSE.txt": "/static/js/2.4c4d8932.chunk.js.LICENSE.txt",
+    "static/media/Arcade.png": "/static/media/Arcade.3519d260.png",
+    "static/media/ReactPage.png": "/static/media/ReactPage.e3817037.png",
+    "static/media/YGO_French_DList.png": "/static/media/YGO_French_DList.6efcba30.png",
     "static/media/Zsh.png": "/static/media/Zsh.b5fb2bec.png",
     "static/media/calculator.png": "/static/media/calculator.f258cce9.png",
+    "static/media/cloud.4d696f46.svg": "/static/media/cloud.4d696f46.svg",
+    "static/media/clouds.985be05f.svg": "/static/media/clouds.985be05f.svg",
     "static/media/imageComp.png": "/static/media/imageComp.3f1a7fde.png",
+    "static/media/rain-cloud.7d084230.svg": "/static/media/rain-cloud.7d084230.svg",
     "static/media/wolfram.png": "/static/media/wolfram.e33c2680.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3bbf3189.js",
-    "static/js/2.b40b1236.chunk.js",
-    "static/css/main.23688553.chunk.css",
-    "static/js/main.fff78c57.chunk.js"
+    "static/js/2.4c4d8932.chunk.js",
+    "static/css/main.9eabec8f.chunk.css",
+    "static/js/main.2f422e25.chunk.js"
   ]
 }
